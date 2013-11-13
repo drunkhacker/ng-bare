@@ -1,0 +1,20 @@
+!!! 5
+html(ng-app="$APPNAME")
+  head
+    meta(charset="utf-8")
+    link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet", href="styles/ringme.css")
+
+    title $APPNAME
+
+  body
+    .container(ng-view="")
+      h1 hello
+
+    //for angular js resources
+    script(src="bower_components/angular/angular.js")
+    script(src="bower_components/angular-route/angular-route.js")
+    // angular setup
+    script(src="scripts/services.js")
+    script(src="scripts/app.js")
+    script(src="scripts/controllers.js")
