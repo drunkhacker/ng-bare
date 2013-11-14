@@ -74,9 +74,9 @@ module.exports = (grunt) ->
         files: [
           expand: true
           cwd: 'app/styles/'
-          src: '**/*.coffee'
+          src: '**/*.less'
           dest: '.tmp/styles/'
-          ext: 'css'
+          ext: '.css'
         ]
     jade:
       compile:
